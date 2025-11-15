@@ -1,0 +1,79 @@
+{
+    "name": "Item",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Title of the lost or found item"
+      },
+      "description": {
+        "type": "string",
+        "description": "Detailed description of the item"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "lost",
+          "found"
+        ],
+        "description": "Whether this is a lost or found item"
+      },
+      "location": {
+        "type": "string",
+        "description": "Where the item was lost or found"
+      },
+      "date_reported": {
+        "type": "string",
+        "format": "date",
+        "description": "Date when the item was lost or found"
+      },
+      "image_url": {
+        "type": "string",
+        "description": "URL of the uploaded item image"
+      },
+      "contact_info": {
+        "type": "string",
+        "description": "Contact information (phone/email)"
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "electronics",
+          "personal_items",
+          "bags",
+          "accessories",
+          "documents",
+          "keys",
+          "clothing",
+          "books",
+          "other"
+        ],
+        "description": "Category of the item"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "active",
+          "claimed",
+          "resolved"
+        ],
+        "default": "active",
+        "description": "Status of the item"
+      },
+      "reward_offered": {
+        "type": "boolean",
+        "default": false,
+        "description": "Whether a reward is offered for this item"
+      },
+      "ai_description": {
+        "type": "string",
+        "description": "AI-generated description from image analysis"
+      }
+    },
+    "required": [
+      "title",
+      "type",
+      "location",
+      "date_reported"
+    ]
+  }

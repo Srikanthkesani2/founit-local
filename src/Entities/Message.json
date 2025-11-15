@@ -1,0 +1,41 @@
+{
+    "name": "Message",
+    "type": "object",
+    "properties": {
+      "from_user_email": {
+        "type": "string",
+        "description": "Email of the sender"
+      },
+      "from_user_name": {
+        "type": "string",
+        "description": "Name of the sender"
+      },
+      "to_user_email": {
+        "type": "string",
+        "description": "Email of the recipient"
+      },
+      "item_id": {
+        "type": "string",
+        "description": "ID of the related item"
+      },
+      "item_title": {
+        "type": "string",
+        "description": "Title of the related item"
+      },
+      "content": {
+        "type": "string",
+        "description": "Message content"
+      },
+      "read": {
+        "type": "boolean",
+        "default": false,
+        "description": "Whether the message has been read"
+      }
+    },
+    "required": [
+      "from_user_email",
+      "to_user_email",
+      "item_id",
+      "content"
+    ]
+  }
