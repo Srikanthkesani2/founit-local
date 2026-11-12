@@ -4,7 +4,7 @@
 **FindIt** is a modern web-based Lost and Found platform designed to help people reconnect with their lost belongings through an intelligent and user-friendly reporting and matching system.
 
 The platform allows users to report lost and found items, browse reported items, and discover potential matches. By leveraging AI-powered matching capabilities, FindIt aims to simplify the process of identifying and recovering lost belongings.
-
+hii ra chotu
 ---
 
 ## 🚀 Key Features
